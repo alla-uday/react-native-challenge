@@ -1,4 +1,15 @@
 {
   "name": "reactNativeChallenge",
-  "displayName": "reactNativeChallenge"
+  "displayName": "reactNativeChallenge",
+  "expo": {
+    "plugins": [
+      [
+        "@fullstory/react-native",
+        {
+          "version": "1.28.0",
+          "org": "ABC"
+        }
+      ]
+    ]
+  }
 }
