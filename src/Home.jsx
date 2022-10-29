@@ -21,6 +21,16 @@ export const Home = () => {
   FullStory.getCurrentSessionURL().then(function(result) {
     const sessionUrl = result;
     console.log('sessionURL', result);
+
+  });
+
+  FullStory.onReady().then(function(result) {
+    const replayStartUrl = result.replayStartUrl;
+    const replayNowUrl = result.replayNowUrl;
+    const sessionId = result.sessionId;
+    console.log('replayStartUrl', replayStartUrl);
+    console.log('replayNowUrl', replayNowUrl);
+    console.log('sessionId', sessionId);
   });
 
   useEffect(() => {
